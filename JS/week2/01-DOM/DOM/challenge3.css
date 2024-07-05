@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#parent-list {
+    padding: 0;
+}
+
+#parent-list > li {
+    margin: 5px 0;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.sub-list {
+    display: none;
+    margin-left: 20px;
+}
+
+
+
+/* Optional styling for better appearance */
+.title:hover {
+    color: blue;
+}
+
+.title.expanded .sub-list{
+    display :block
+}

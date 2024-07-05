@@ -1,0 +1,14 @@
+.button {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    background-color: #ff0606;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .paragraph {
+    margin: 10px;
+    padding: 10px;
+    background-color: #f1f1f1;
+  }
