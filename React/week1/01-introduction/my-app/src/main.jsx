@@ -1,10 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './Calc'
-import './App.css'
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './Login.css';
+import App from './App';
+import Categories from './Categories'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-      <App />    
-  </React.StrictMode>,
-)
+   <BrowserRouter>
+      <Routes>
+        <Route path="/app" element={<App/>} />
+        <Route path="/categories" element={<Categories/>} />
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>
+);
