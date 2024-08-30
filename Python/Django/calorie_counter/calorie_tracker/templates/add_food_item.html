@@ -1,0 +1,16 @@
+
+{% extends 'calorie_tracker/base.html' %}
+
+{% block title %}Add Food Item{% endblock %}
+
+{% block content %}
+<h1 class="text-2xl font-bold">Add Food Item</h1>
+<form method="post">
+    {% csrf_token %}
+    <label for="name" class="block">Food Name:</label>
+    <input type="text" name="name" id="name" required class="border p-1">
+    <label for="calories" class="block">Calories:</label>
+    <input type="number" name="calories" id="calories" required class="border p-1">
+    <button type="submit" class="bg-green-500 text-white p-2 rounded mt-2">Add</button>
+</form>
+{% endblock %}
